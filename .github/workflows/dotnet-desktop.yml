@@ -1,38 +1,29 @@
-pool:
-  name: Default  # ou o nome do pool onde você registrou o agente
-  demands:
-    - agent.name -equals SBRLINUXTEST
+name: .NET Build and Test
+
 on:
   push:
+    branches: [ main ]
   pull_request:
+    branches: [ main ]
 
-stages:
-  - stage: Test
-    jobs:
-      - job: RunTests
-        steps:
-          - task: UseDotNet@2
-            inputs:
-              packageType: 'sdk'
-              version: '8.0.x'
-              installationPath: $(Agent.ToolsDirectory)/dotnet
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-          - task: DotNetCoreCLI@2
-            displayName: 'Restaurar pacotes'
-            inputs:
-              command: 'restore'
-              projects: '**/ProjetoColeta.sln'
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
 
-          - task: DotNetCoreCLI@2
-            displayName: 'Build do projeto'
-            inputs:
-              command: 'build'
-              projects: '**/ProjetoColeta.sln'
-              arguments: '--configuration Release'
+    - name: Instalar SDK .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'
 
-          - task: DotNetCoreCLI@2
-            displayName: 'Executar testes'
-            inputs:
-              command: 'test'
-              projects: '**/ProjetoColeta.sln'
-              arguments: '--configuration Release --no-build'
+    - name: Restaurar pacotes
+      run: dotnet restore **/ProjetoColeta.sln
+
+    - name: Build do projeto
+      run: dotnet build **/ProjetoColeta.sln --configuration Release --no-restore
+
+    - name: Executar testes
+      run: dotnet test **/ProjetoColeta.sln --configuration Release --no-build --verbosity normal
