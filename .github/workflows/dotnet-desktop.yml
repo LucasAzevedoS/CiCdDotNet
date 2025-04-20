@@ -2,6 +2,10 @@ pool:
   name: Default  # ou o nome do pool onde você registrou o agente
   demands:
     - agent.name -equals SBRLINUXTEST
+on:
+  push:
+  pull_request:
+
 stages:
   - stage: Test
     jobs:
