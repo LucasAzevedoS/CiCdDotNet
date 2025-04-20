@@ -20,10 +20,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restaurar pacotes
-      run: dotnet restore **/ProjetoColeta.sln
+      run: dotnet restore ./ProjetoColeta.sln
 
     - name: Build do projeto
-      run: dotnet build **/ProjetoColeta.sln --configuration Release --no-restore
+      run: dotnet build ./ProjetoColeta.sln --configuration Release --no-restore
 
     - name: Executar testes
-      run: dotnet test **/ProjetoColeta.sln --configuration Release --no-build --verbosity normal
+      run: dotnet test ./ProjetoColeta.sln --configuration Release --no-build --verbosity normal
