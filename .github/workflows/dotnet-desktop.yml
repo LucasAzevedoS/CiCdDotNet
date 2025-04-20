@@ -1,0 +1,34 @@
+pool:
+  name: Default  # ou o nome do pool onde você registrou o agente
+  demands:
+    - agent.name -equals SBRLINUXTEST
+stages:
+  - stage: Test
+    jobs:
+      - job: RunTests
+        steps:
+          - task: UseDotNet@2
+            inputs:
+              packageType: 'sdk'
+              version: '8.0.x'
+              installationPath: $(Agent.ToolsDirectory)/dotnet
+
+          - task: DotNetCoreCLI@2
+            displayName: 'Restaurar pacotes'
+            inputs:
+              command: 'restore'
+              projects: '**/ProjetoColeta.sln'
+
+          - task: DotNetCoreCLI@2
+            displayName: 'Build do projeto'
+            inputs:
+              command: 'build'
+              projects: '**/ProjetoColeta.sln'
+              arguments: '--configuration Release'
+
+          - task: DotNetCoreCLI@2
+            displayName: 'Executar testes'
+            inputs:
+              command: 'test'
+              projects: '**/ProjetoColeta.sln'
+              arguments: '--configuration Release --no-build'
