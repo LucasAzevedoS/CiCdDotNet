@@ -1,0 +1,35 @@
+name: Deploy Homologação
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Instalar SDK .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restaurar pacotes
+        run: dotnet restore ./ProjetoColeta.sln
+
+      - name: Build do projeto
+        run: dotnet build ./ProjetoColeta.sln --configuration Release --no-restore
+
+      - name: Executar testes
+        run: dotnet test ./ProjetoColeta.sln --configuration Release --no-build --verbosity normal
+
+      - name: Deploy para Azure Web App (Homologação)
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: projetocoleta-hml
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_HML }}
+          package: .
