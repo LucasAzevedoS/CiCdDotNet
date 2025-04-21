@@ -27,9 +27,12 @@ jobs:
       - name: Executar testes
         run: dotnet test ./ProjetoColeta.sln --configuration Release --no-build --verbosity normal
 
+      - name: Publicar projeto
+        run: dotnet publish ./ProjetoColeta.sln --configuration Release --output ./publish
+
       - name: Deploy para Azure Web App (Homologação)
         uses: azure/webapps-deploy@v2
         with:
           app-name: projetocoleta-hml
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_HML }}
-          package: .
+          package: ./publish
