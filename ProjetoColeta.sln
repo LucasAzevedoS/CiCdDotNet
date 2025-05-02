@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoColeta", "ProjetoColeta\ProjetoColeta.csproj", "{1C612050-ED73-4BE8-8CEA-24EE80A90CAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoColeta.Tests", "ProjetoColeta.Tests\ProjetoColeta.Tests.csproj", "{FDBA8D66-E615-492C-9A09-2C03EC820923}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1C612050-ED73-4BE8-8CEA-24EE80A90CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C612050-ED73-4BE8-8CEA-24EE80A90CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C612050-ED73-4BE8-8CEA-24EE80A90CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBA8D66-E615-492C-9A09-2C03EC820923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBA8D66-E615-492C-9A09-2C03EC820923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBA8D66-E615-492C-9A09-2C03EC820923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBA8D66-E615-492C-9A09-2C03EC820923}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

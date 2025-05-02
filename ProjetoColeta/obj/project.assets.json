@@ -5,13 +5,59 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Json.More.Net/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Json.More.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Json.More.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "JsonPointer.Net/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "2.14.1",
+          "Json.More.Net": "2.1.1"
+        },
+        "compile": {
+          "lib/net8.0/JsonPointer.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/JsonPointer.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "JsonSchema.Net/7.3.4": {
+        "type": "package",
+        "dependencies": {
+          "JsonPointer.Net": "5.3.1"
+        },
+        "compile": {
+          "lib/net8.0/JsonSchema.Net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/JsonSchema.Net.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -687,6 +733,15 @@
           }
         }
       },
+      "Microsoft.Json.Schema.Validation/2.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Json.Schema.Validation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Json.Schema.Validation.dll": {}
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "type": "package",
         "compile": {
@@ -1350,6 +1405,69 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Json.More.Net/2.1.1": {
+      "sha512": "ZXAKl2VsdnIZeUo1PFII3Oi1m1L4YQjEyDjygHfHln5vgsjgIo749X6xWkv7qFYp8RROES+vOEfDcvvoVgs8kA==",
+      "type": "package",
+      "path": "json.more.net/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "json-logo-256.png",
+        "json.more.net.2.1.1.nupkg.sha512",
+        "json.more.net.nuspec",
+        "lib/net8.0/Json.More.dll",
+        "lib/net8.0/Json.More.xml",
+        "lib/net9.0/Json.More.dll",
+        "lib/net9.0/Json.More.xml",
+        "lib/netstandard2.0/Json.More.dll",
+        "lib/netstandard2.0/Json.More.xml"
+      ]
+    },
+    "JsonPointer.Net/5.3.1": {
+      "sha512": "3e2OJjU0OaE26XC/klgxbJuXvteFWTDJIJv0ITYWcJEoskq7jzUwPSC1s0iz4wPPQnfN7vwwFmg2gJfwRAPwgw==",
+      "type": "package",
+      "path": "jsonpointer.net/5.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "json-logo-256.png",
+        "jsonpointer.net.5.3.1.nupkg.sha512",
+        "jsonpointer.net.nuspec",
+        "lib/net8.0/JsonPointer.Net.dll",
+        "lib/net8.0/JsonPointer.Net.xml",
+        "lib/net9.0/JsonPointer.Net.dll",
+        "lib/net9.0/JsonPointer.Net.xml",
+        "lib/netstandard2.0/JsonPointer.Net.dll",
+        "lib/netstandard2.0/JsonPointer.Net.xml"
+      ]
+    },
+    "JsonSchema.Net/7.3.4": {
+      "sha512": "7GggWrdzKrtGWETRn3dcMnmuLSyWaDkBK94TK80LEHQEVz4bmsQc7FYO7qL40RDdZU2YPz5d98aT9lW5OYExuA==",
+      "type": "package",
+      "path": "jsonschema.net/7.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "json-logo-256.png",
+        "jsonschema.net.7.3.4.nupkg.sha512",
+        "jsonschema.net.nuspec",
+        "lib/net8.0/JsonSchema.Net.dll",
+        "lib/net8.0/JsonSchema.Net.pdb",
+        "lib/net8.0/JsonSchema.Net.xml",
+        "lib/net9.0/JsonSchema.Net.dll",
+        "lib/net9.0/JsonSchema.Net.pdb",
+        "lib/net9.0/JsonSchema.Net.xml",
+        "lib/netstandard2.0/JsonSchema.Net.dll",
+        "lib/netstandard2.0/JsonSchema.Net.pdb",
+        "lib/netstandard2.0/JsonSchema.Net.xml"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.0": {
@@ -2651,6 +2769,62 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
+    "Microsoft.Json.Schema.Validation/2.3.0": {
+      "sha512": "qrmGALUVoO+Pr2MRoxXJCTJOveURg2P+POaSwxfsxeo/8AgGXUiLDbxMwgMl/5lbUiXeg59tOQWj4esdoeXLlQ==",
+      "type": "package",
+      "path": "microsoft.json.schema.validation/2.3.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReleaseHistory.md",
+        "lib/net461/Microsoft.Json.Schema.Validation.dll",
+        "lib/netstandard2.0/Microsoft.Json.Schema.Validation.dll",
+        "microsoft.json.schema.validation.2.3.0.nupkg.sha512",
+        "microsoft.json.schema.validation.nuspec",
+        "src/Json.Schema.Validation.Cli/Options.cs",
+        "src/Json.Schema.Validation.Cli/Program.cs",
+        "src/Json.Schema.Validation.Cli/Properties/AssemblyInfo.cs",
+        "src/Json.Schema.Validation.Cli/ValidatorResources.Designer.cs",
+        "src/Json.Schema.Validation/ExtensionMethods.cs",
+        "src/Json.Schema.Validation/JTokenEqualityComparer.cs",
+        "src/Json.Schema.Validation/ResultFactory.cs",
+        "src/Json.Schema.Validation/RuleFactory.cs",
+        "src/Json.Schema.Validation/RuleResources.Designer.cs",
+        "src/Json.Schema.Validation/Validator.cs",
+        "tools/net461/CommandLine.dll",
+        "tools/net461/Microsoft.Json.Schema.Validation.Cli.exe",
+        "tools/net461/Microsoft.Json.Schema.Validation.Cli.exe.config",
+        "tools/net461/Microsoft.Json.Schema.Validation.Cli.pdb",
+        "tools/net461/Microsoft.Json.Schema.Validation.dll",
+        "tools/net461/Microsoft.Json.Schema.Validation.pdb",
+        "tools/net461/Microsoft.Json.Schema.dll",
+        "tools/net461/Microsoft.Json.Schema.pdb",
+        "tools/net461/Newtonsoft.Json.dll",
+        "tools/net461/Sarif.dll",
+        "tools/net461/System.Buffers.dll",
+        "tools/net461/System.Collections.Immutable.dll",
+        "tools/net461/System.Console.dll",
+        "tools/net461/System.Memory.dll",
+        "tools/net461/System.Numerics.Vectors.dll",
+        "tools/net461/System.Reflection.TypeExtensions.dll",
+        "tools/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/netcoreapp3.1/CommandLine.dll",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.Cli.deps.json",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.Cli.dll",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.Cli.dll.config",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.Cli.exe",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.Cli.pdb",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.Cli.runtimeconfig.json",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.dll",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.Validation.pdb",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.dll",
+        "tools/netcoreapp3.1/Microsoft.Json.Schema.pdb",
+        "tools/netcoreapp3.1/Newtonsoft.Json.dll",
+        "tools/netcoreapp3.1/Sarif.dll",
+        "tools/netcoreapp3.1/System.Collections.Immutable.dll"
+      ]
+    },
     "Microsoft.OpenApi/1.2.3": {
       "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "type": "package",
@@ -3624,37 +3798,36 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "JsonSchema.Net >= 7.3.4",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
+      "Microsoft.Json.Schema.Validation >= 2.3.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.20.1",
       "Oracle.EntityFrameworkCore >= 8.21.121",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lucas\\.nuget\\packages\\": {}
+    "C:\\Users\\riang\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
+      "projectUniqueName": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
       "projectName": "ProjetoColeta",
-      "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
-      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\CiCdDotNet\\ProjetoColeta\\obj\\",
+      "projectPath": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
+      "packagesPath": "C:\\Users\\riang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\riang\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3678,6 +3851,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "JsonSchema.Net": {
+            "target": "Package",
+            "version": "[7.3.4, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -3697,6 +3874,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "Microsoft.Json.Schema.Validation": {
+            "target": "Package",
+            "version": "[2.3.0, )"
           },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
@@ -3730,7 +3911,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
