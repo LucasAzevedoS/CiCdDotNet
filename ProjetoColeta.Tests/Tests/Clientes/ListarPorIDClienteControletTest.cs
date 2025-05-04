@@ -37,7 +37,7 @@ namespace ProjetoColeta.Tests.Clientes
     public async Task BuscarClientePorId_DeveRetornarNotFound_QuandoClienteNaoExistir()
     {
       // Arrange
-      var idInexistente = 9999;
+      var idInexistente = 0;
 
       // Act
       var response = await _client.GetAsync($"api/Clientes/{idInexistente}");

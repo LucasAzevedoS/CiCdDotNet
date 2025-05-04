@@ -14,6 +14,8 @@
     <PackageReference Include="FluentAssertions" Version="8.2.0" />
     <PackageReference Include="JsonSchema.Net" Version="7.3.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NJsonSchema" Version="11.3.2" />
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
   </ItemGroup>
@@ -24,6 +26,25 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProjetoColeta\ProjetoColeta.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Tests\TestesDeContrato\Schemas\Auth\AuthLoginResponseSchema.json">
+      <Link>Schemas\Auth\AuthLoginResponseSchema.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\TestesDeContrato\Schemas\Clientes\CreateClienteResponseSchema.json">
+      <Link>Schemas\Clientes\CreateClienteResponseSchema.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\TestesDeContrato\Schemas\Coletor\CreateColetorResponseSchema.json">
+      <Link>Schemas\Coletor\CreateColetorResponseSchema.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Tests\TestesDeContrato\Schemas\Residuo\CreateResiduoResponseSchema.json">
+      <Link>Schemas\Residuo\CreateResiduoResponseSchema.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

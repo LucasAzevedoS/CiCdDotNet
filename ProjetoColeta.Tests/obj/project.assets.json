@@ -769,15 +769,59 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Namotion.Reflection/3.4.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net8.0/Namotion.Reflection.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net8.0/Namotion.Reflection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NJsonSchema/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "NJsonSchema.Annotations": "11.3.2",
+          "Namotion.Reflection": "3.4.2",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/net8.0/NJsonSchema.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NJsonSchema.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NJsonSchema.Annotations/11.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NJsonSchema.Annotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NJsonSchema.Annotations.dll": {
             "related": ".xml"
           }
         }
@@ -2625,14 +2669,33 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Namotion.Reflection/3.4.2": {
+      "sha512": "ZHrvPdAg7zV78iOTiH9ua+34rBfn4iH6Bjfo2bzUHOGD3KkjGUvqxBFy+v9p6qwV+GEeYWl4NOqXH8tVcZOMpw==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "namotion.reflection/3.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Namotion.Reflection.dll",
+        "lib/net462/Namotion.Reflection.xml",
+        "lib/net8.0/Namotion.Reflection.dll",
+        "lib/net8.0/Namotion.Reflection.xml",
+        "lib/netstandard2.0/Namotion.Reflection.dll",
+        "lib/netstandard2.0/Namotion.Reflection.xml",
+        "namotion.reflection.3.4.2.nupkg.sha512",
+        "namotion.reflection.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -2641,15 +2704,51 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "NJsonSchema/11.3.2": {
+      "sha512": "QXvelMLKz1NsMPc0HndaaxryNIV1V+AFYuZV9w3H6e+03jp3f3n1w8XLcIaA5WA51EHQdZEP4V2Bfgl6kpxDKg==",
+      "type": "package",
+      "path": "njsonschema/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGetIcon.png",
+        "lib/net462/NJsonSchema.dll",
+        "lib/net462/NJsonSchema.xml",
+        "lib/net8.0/NJsonSchema.dll",
+        "lib/net8.0/NJsonSchema.xml",
+        "lib/netstandard2.0/NJsonSchema.dll",
+        "lib/netstandard2.0/NJsonSchema.xml",
+        "njsonschema.11.3.2.nupkg.sha512",
+        "njsonschema.nuspec"
+      ]
+    },
+    "NJsonSchema.Annotations/11.3.2": {
+      "sha512": "rSwQFKdLlq/lbAJfYqI5KBE46KJCbc99L6G9XM1nVpCOxE0eoaNE8+fkJ7Ws+I5VqP7oEPGKXTR3Q7PmYoeTDA==",
+      "type": "package",
+      "path": "njsonschema.annotations/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGetIcon.png",
+        "lib/net462/NJsonSchema.Annotations.dll",
+        "lib/net462/NJsonSchema.Annotations.xml",
+        "lib/netstandard2.0/NJsonSchema.Annotations.dll",
+        "lib/netstandard2.0/NJsonSchema.Annotations.xml",
+        "njsonschema.annotations.11.3.2.nupkg.sha512",
+        "njsonschema.annotations.nuspec"
       ]
     },
     "NuGet.Frameworks/6.5.0": {
@@ -3251,6 +3350,8 @@
       "FluentAssertions >= 8.2.0",
       "JsonSchema.Net >= 7.3.4",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
+      "NJsonSchema >= 11.3.2",
+      "Newtonsoft.Json >= 13.0.3",
       "ProjetoColeta >= 1.0.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.9.3",
@@ -3263,11 +3364,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta.Tests\\ProjetoColeta.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\riang\\OneDrive\\Desktop\\teste0\\CiCdDotNet\\ProjetoColeta.Tests\\ProjetoColeta.Tests.csproj",
       "projectName": "ProjetoColeta.Tests",
-      "projectPath": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta.Tests\\ProjetoColeta.Tests.csproj",
+      "projectPath": "C:\\Users\\riang\\OneDrive\\Desktop\\teste0\\CiCdDotNet\\ProjetoColeta.Tests\\ProjetoColeta.Tests.csproj",
       "packagesPath": "C:\\Users\\riang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta.Tests\\obj\\",
+      "outputPath": "C:\\Users\\riang\\OneDrive\\Desktop\\teste0\\CiCdDotNet\\ProjetoColeta.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\riang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3282,8 +3383,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj": {
-              "projectPath": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj"
+            "C:\\Users\\riang\\OneDrive\\Desktop\\teste0\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj": {
+              "projectPath": "C:\\Users\\riang\\OneDrive\\Desktop\\teste0\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj"
             }
           }
         }
@@ -3314,6 +3415,14 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.8.0, )"
+          },
+          "NJsonSchema": {
+            "target": "Package",
+            "version": "[11.3.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "coverlet.collector": {
             "target": "Package",

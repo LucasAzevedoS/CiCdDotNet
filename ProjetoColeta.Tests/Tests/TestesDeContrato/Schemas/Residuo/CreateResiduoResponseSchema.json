@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "idResiduo": { "type": "integer" },
+    "nome": { "type": "string" },
+    "peso": { "type": "integer" },
+    "ehReciclavel": { "type": "boolean" },
+    "idCliente": { "type": "integer" }
+  },
+  "required": [
+    "idResiduo",
+    "nome",
+    "peso",
+    "ehReciclavel",
+    "idCliente"
+  ]
+}

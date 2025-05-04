@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "idCliente": { "type": "integer" },
+    "nome": { "type": "string" },
+    "password": { "type": "string" },
+    "cpf": { "type": "string" },
+    "numeroCasa": { "type": "integer" }
+  },
+  "required": [
+    "idCliente",
+    "nome",
+    "password",
+    "cpf",
+    "numeroCasa"
+  ]
+}

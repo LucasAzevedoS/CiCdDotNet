@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "idColetor": { "type": "integer" },
+    "nomeColetor": { "type": "string" },
+    "pontos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "idPonto": { "type": "integer" },
+          "local": { "type": "string" },
+          "capacidadeMaxima": { "type": "integer" },
+          "status": { "type": "boolean" },
+          "idColetor": { "type": "integer" }
+        },
+        "required": [
+          "idPonto",
+          "local",
+          "capacidadeMaxima",
+          "status",
+          "idColetor"
+        ]
+      }
+    }
+  },
+  "required": [
+    "idColetor",
+    "nomeColetor",
+    "pontos"
+  ]
+}
