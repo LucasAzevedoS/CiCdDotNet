@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoColeta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f496182c312c68b02d2a009ef4bc2740329bdda1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41e503814bf56fda14d0cea1b23de9a9377daf3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoColeta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoColeta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
