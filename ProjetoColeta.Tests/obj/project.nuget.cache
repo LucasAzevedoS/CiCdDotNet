@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zcMYDuJXPME=",
+  "dgSpecHash": "oQFyanYrDSA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\riang\\OneDrive\\Desktop\\teste0\\CiCdDotNet\\ProjetoColeta.Tests\\ProjetoColeta.Tests.csproj",
+  "projectFilePath": "C:\\Users\\riang\\OneDrive\\Documentos\\teste1\\CiCdDotNet\\ProjetoColeta.Tests\\ProjetoColeta.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\riang\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\riang\\.nuget\\packages\\fluentassertions\\8.2.0\\fluentassertions.8.2.0.nupkg.sha512",

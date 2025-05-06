@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj": {}
+    "C:\\Users\\riang\\OneDrive\\Documentos\\teste1\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj": {
+    "C:\\Users\\riang\\OneDrive\\Documentos\\teste1\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
+        "projectUniqueName": "C:\\Users\\riang\\OneDrive\\Documentos\\teste1\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
         "projectName": "ProjetoColeta",
-        "projectPath": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
+        "projectPath": "C:\\Users\\riang\\OneDrive\\Documentos\\teste1\\CiCdDotNet\\ProjetoColeta\\ProjetoColeta.csproj",
         "packagesPath": "C:\\Users\\riang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\riang\\OneDrive\\Desktop\\testes\\CiCdDotNet\\ProjetoColeta\\obj\\",
+        "outputPath": "C:\\Users\\riang\\OneDrive\\Documentos\\teste1\\CiCdDotNet\\ProjetoColeta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\riang\\AppData\\Roaming\\NuGet\\NuGet.Config"
